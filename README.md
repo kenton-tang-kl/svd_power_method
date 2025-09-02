@@ -19,7 +19,9 @@ pip install numpy pybind11
 ### Build the C++ module:
 
 ```bash
-python setup.py install
+export CC=/usr/bin/clang
+export CXX=/usr/bin/clang++
+python setup.py build_ext --inplace
 ```
 
 ### Usage
